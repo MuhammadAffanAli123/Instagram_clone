@@ -12,7 +12,7 @@ const UserSchem = new mongoose.Schema({
      password:{
         type : String,
         required:true
-     }
+     } 
 })
 
 mongoose.model('User', UserSchem)

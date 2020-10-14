@@ -24,7 +24,7 @@ router.post("/signup", (req, res) => {
   User.findOne({ email: email })
     .then((saved) => {
       if (saved) {
-        res.status(400).json({ error: "!! email exit " });
+        res.status(402).json({ error: "!! email exit " });
       } else {
         bcrypt.hash(password, 12).then((HahPassword) => {
           const user = new User({

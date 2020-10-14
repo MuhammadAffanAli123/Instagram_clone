@@ -24,6 +24,7 @@ app.use(require("./routes/postRoute"));
 
 app.listen(PORT, () => {
   console.log("Listening the server on ", PORT);
+  
 });
 
 // IXffpoqiSr2GaDvN
